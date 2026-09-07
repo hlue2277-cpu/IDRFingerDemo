@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_proimg"
+                android:layout_width="102dp"
+                android:layout_height="144dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="6dp"
+                android:src="@color/colorgrad" />
+
+            <CheckBox
+                android:id="@+id/ck_save_proimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/save_image"
+                android:textSize="12dp"></CheckBox>
+
+            <TextView
+                android:id="@+id/tv_savepath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:ellipsize="none"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_openOne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/open_device"
+                    android:textAllCaps="false"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:padding="1dp"
+                    android:text="@string/close_device"
+                    android:textAllCaps="false"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_captureimage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:padding="1dp"
+                    android:text="@string/capture_image"
+                    android:textAllCaps="false"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_cali"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/cali_device"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/stop_capture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:padding="1dp"
+                    android:text="@string/stopcapture"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edt_enrill_id"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="2dp"
+                    android:hint="please print finger id"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:textSize="11sp"></EditText>
+
+
+                <CheckBox
+                    android:id="@+id/ck_capture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/countine_capture"
+                    android:textSize="11sp"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/ck_redimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="3dp"
+                    android:text="红化指纹"
+                    android:textSize="11sp"></CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_create_template1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:enabled="false"
+                    android:padding="1dp"
+                    android:text="@string/create_template1"
+                    android:textAllCaps="false"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_create_template2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:enabled="false"
+                    android:padding="1dp"
+                    android:text="@string/create_template2"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_match_template"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:enabled="false"
+                    android:padding="1dp"
+                    android:text="@string/match_template"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_enroll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/enroll_finger"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_verify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/verify_finger"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_continue_verify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="连续搜索"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="取消操作"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_delete_finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="@string/delete_finger"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btn_delete_one_finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:padding="0dp"
+                    android:text="@string/delete_one_finger"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/btn_get_allfinger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:padding="0dp"
+                    android:text="@string/get_allfinger"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/ck_mcucapture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:checked="true"
+                android:text="MCU采图"
+                android:visibility="gone"></CheckBox>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:text=""
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_FirmwareVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text=""
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="串口名："
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="/dev/ttyS1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:onClick="OnBnBeginOne"
+                android:padding="1dp"
+                android:text="单次读卡"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:onClick="OnBnBegin"
+                android:padding="1dp"
+                android:text="连续读卡"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:onClick="OnBnStop"
+                android:padding="1dp"
+                android:text="停止读卡"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:onClick="OnBnVerify"
+                android:padding="1dp"
+                android:text="身份证指纹比对"
+                android:visibility="invisible"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="179dp"
+                android:layout_height="220.5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/verifyResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

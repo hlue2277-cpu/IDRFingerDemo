@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">身份证阅读软件</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="app_name_zhongan">中安百傲</string>
+    <string name="save_image">保存图像</string>
+    <string name="open_device">打开设备</string>
+    <string name="close_device">关闭设备</string>
+    <string name="cali_device">校准设备</string>
+    <string name="capture_image">采集图像</string>
+    <string name="create_template1">获取特征值(1)</string>
+    <string name="create_template2">获取特征值(2)</string>
+    <string name="match_template">特征值比对</string>
+    <string name="countine_capture">连续采图</string>
+    <string name="upgrad_device">升级设备</string>
+    <string name="image2template">图像转特征值</string>
+    <string name="create_templateIso2005">获取特征值2005</string>
+    <string name="match_templateIso2005">特征值比对2005</string>
+    <string name="create_templateIso2011">获取特征值2011</string>
+    <string name="match_templateIso2011">特征值比对2011</string>
+    <string name="compress_wsq">WSQ压缩</string>
+    <string name="uncompress_wsq">WSQ解压</string>
+    <string name="usb_device_detached">USB设备已拔出</string>
+    <string name="usb_device_attached">USB设备已插入</string>
+    <string name="capture_imagetime">采集图像时间:</string>
+    <string name="opendevice_success">打开设备成功</string>
+    <string name="opendevice_failed">打开设备失败</string>
+    <string name="closedevice_success">关闭设备成功</string>
+    <string name="closedevice_failed">关闭设备失败</string>
+    <string name="nousbdevice">没有检测到USB指纹设备</string>
+    <string name="please_open_device">请先打开设备</string>
+    <string name="cali_device_success">校准成功</string>
+    <string name="cali_device_failed">校准失败</string>
+    <string name="create_template1_failed">创建模板(1)失败</string>
+    <string name="create_template1_success">创建模板(1)成功</string>
+    <string name="create_template2_failed">创建模板(2)失败</string>
+    <string name="create_template2_success">创建模板(2)成功</string>
+    <string name="match_template_failed">匹配失败</string>
+    <string name="match_template_success">匹配成功</string>
+    <string name="create_templateiso2005_failed">ISO2005创建模板失败</string>
+    <string name="create_templateiso2005_success">ISO2005创建模板成功</string>
+    <string name="create_templateiso2011_failed">ISO2011创建模板失败</string>
+    <string name="create_templateiso2011_success">ISO2011创建模板成功</string>
+    <string name="match_templateiso2005_failed">ISO2005匹配失败</string>
+    <string name="match_templateiso2005_success">ISO2005匹配成功,分数为:</string>
+    <string name="match_templateiso2011_failed">ISO2011匹配失败</string>
+    <string name="match_templateiso2011_success">ISO2011匹配成功,分数为:</string>
+    <string name="have_finger">  有手指</string>
+    <string name="no_finger">  无手指</string>
+
+    <string name="enroll_finger">录入手指</string>
+    <string name="verify_finger">指纹解锁</string>
+    <string name="delete_finger">删除全部指纹</string>
+    <string name="delete_one_finger">删除固定ID指纹</string>
+    <string name="get_allfinger">获取指纹信息</string>
+    <string name="algversion">算法版本号:</string>
+    <string name="firmversion">固件版本号:</string>
+    <string name="stopcapture">停止采图</string>
+    <string name="pressfinger">请按压手指在指纹传感器上</string>
+    <string name="capture_success">采图成功</string>
+
+</resources>
